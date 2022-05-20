@@ -1,20 +1,6 @@
-/* ● Paleta de colores
-Amarillo: #EAC926;
-Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a; */
-
-/* ● Tamaños Tipográficos
-Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px*/
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 0px;    
     box-sizing: border-box;
 }
 
@@ -30,23 +16,40 @@ h3{
 p{
     font-size: 12px;
 }
+
 div.top-header{
+    display: flex;
+    flex-wrap: wrap;
     padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 header{
     background-color: #EAC926;
 }
 
-header div.logo{
+header div.logo,
+header .form{
     width: 50%;
 }
 
 header div.logo{
     padding: 10px;
 }
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
 header nav{
     font-size: 12px;
+    margin-left: 20px;
 }
 
 header ul li{
@@ -65,17 +68,12 @@ header .form .input{
     color: #666;
     padding: 2px;
 }
+
 header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
     width: 10%;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
 }
 
 div.burger-menu{
@@ -93,8 +91,19 @@ div.burger-menu i{
     width: 40px;
 }
 
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .price{
     font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
 }
 
 .discount,
@@ -137,6 +146,7 @@ main section article i,
 }
 
 main section article i{
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -144,6 +154,9 @@ main section article i{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 main section h3{
@@ -152,34 +165,12 @@ main section h3{
 
 article div.main-article{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
     border-top: 1px solid #ebebeb;
+    position: relative;
     padding: 15px;
-}
-
-.alineacion{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10%;
-    width: 100%;
-}
-.pie p{
-    color: #666;
-    margin-bottom: 10%;
-    margin-top: 5%;
-}
-.pie h4{
-    color: #666;
-    font-weight: bold;
-    margin-bottom: 0%;
-    margin-top: 5%;
-}
-.alineacion h5{
-    text-align: left;
-}
-.alineacion{
-    text-align: center;
-    box-sizing: border-box;
 }
 
 @media (min-width: 361px){
@@ -190,8 +181,27 @@ article div.main-article{
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
 }
 
 @media (min-width: 769px){
-
+    main section div.products article{
+        width: 22%;
+    }
 }
