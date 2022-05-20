@@ -37,18 +37,18 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-                <form action="/" method="POSTgit">
+                <form action="/" method="POST">
                     
                         <div>
                         <!-- nombre y apellido -->       
                         <h5>nombre y apellido</h5>       
-                        <input type="text" name="nombre" placeholder="nombre y apellido" required>
+                        <input type="text" name="nombre" placeholder="nombre y apellido" minlength="7" required>
                         </div>
 
                         <div>
                             <!-- Nombre de usuari@ -->      
                             <h5>Nombre de usuari@</h5>        
-                        <input type="text" name="usuario" placeholder="Nombre de usuari@" required>
+                        <input type="text" name="usuario" placeholder="Nombre de usuari@" minlength="7"required>
                         </div>
 
                         <div>
@@ -105,12 +105,12 @@
                         <div>
                             <!-- Contraseña -->
                             <h5>contraseña</h5>
-                            <input type="password"name="pw" placeholder="elegi tu contraseña" required>
+                            <input type="password"name="pw" placeholder="elegi tu contraseña" minlength="5"required>
                         </div>
                         <div>
                             <!-- Confirmar contraseña -->
                             <h5>confirmar contraseña</h5>
-                            <input type="password"name="confirmarPw" placeholder="confirmar tu contraseña" required>
+                            <input type="password"name="confirmarPw" placeholder="confirmar tu contraseña" minlength="5"required>
                         </div>
                         <div>                
                             <!-- Botón de enviar que nos lleve a la página principal -->
