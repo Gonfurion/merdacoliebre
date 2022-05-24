@@ -36,3 +36,6 @@ app.get('/vender', (req,res)=>{
 app.get('/login', (req,res)=>{
     res.sendFile(__dirname + '/views/login.html');
 });
+app.get('/tiendasOficiales', (req,res)=>{
+    res.sendFile(__dirname + '/views/tiendasOficiales.html');
+});
