@@ -39,85 +39,86 @@
         </header>
                 <form action="/" method="POST">
                     
-                        <div>
+                        <p>
                         <!-- nombre y apellido -->       
                         <h5>nombre y apellido</h5>       
                         <input type="text" name="nombre" placeholder="nombre y apellido" minlength="7" required>
-                        </div>
-
-                        <div>
+                        </p>
+p
+                        <p>
                             <!-- Nombre de usuari@ -->      
                             <h5>Nombre de usuari@</h5>        
                         <input type="text" name="usuario" placeholder="Nombre de usuari@" minlength="7"required>
-                        </div>
+                        </p>
 
-                        <div>
+                        <p>
                             <!-- Fecha de nacimiento -->
                             <h5>Fecha de nacimiento</h5>
                             <input type="date" name="fecha" required>
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                             <!-- Domicilio -->
                             <h5>domicilio</h5>
                             <input type="text" name="domicilio" placeholder="Domicilio" required>
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                             <!-- Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender) -->
                             <h5>Perfil del usuario</h5>
                             <input type="radio" name="perfil" value="comprar" id="comprar">
                             <label for="comprar">comprador</label>
                             <input type="radio" name="perfil" value="vender" id="vender">
                             <label for="vender">vendedor</label>
-                        </div>
-                        <div>
-                            <!-- Categorías de interés (puede elegir más de una)Electro
+                        </p>
+                        <p>
+                            <!-- Categorías de interés (puede elegir más de una)
+                            ● Electro
                             ● Moda
                             ● Hogar
                             ● Juguetería
                             ● Vida sana -->
                             <h5>Categorias de Interés</h5>
-                                <div>
-                                    <input type="checkbox" name="interes" value="electro" id="electro">
-                                    <label for="electro">Electro</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="interes" value="Moda" id="Moda">
-                                    <label for="Moda">Moda</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="interes" value="Hogar" id="Hogar">
-                                    <label for="Hogar">Hogar</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="interes" value="jugeteria" id="jugeteria">
-                                    <label for="jugeteria">Juguetería</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="interes" value="vidaSana" id="vidaSana">
-                                    <label for="vidaSana">Vida sana</label>
-                                </div>
-                        </div>
-                        <div>
+                            <p>
+                                <input type="checkbox" name="interes" value="electro" id="electro">
+                                <label for="electro">Electro</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="interes" value="Moda" id="Moda">
+                                <label for="Moda">Moda</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="interes" value="Hogar" id="Hogar">
+                                <label for="Hogar">Hogar</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="interes" value="jugeteria" id="jugeteria">
+                                <label for="jugeteria">Juguetería</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="interes" value="vidaSana" id="vidaSana">
+                                <label for="vidaSana">Vida sana</label>
+                            </p>
+                        </p>
+                        <p>
                             <!-- Foto de usuario -->
                             <h5>Foto de usuario</h5>
                             <input type="file" name="fotoUsuario">
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                             <!-- Contraseña -->
                             <h5>contraseña</h5>
-                            <input type="password"name="pw" placeholder="elegi tu contraseña" minlength="5"required>
-                        </div>
-                        <div>
+                            <input type="password "name="pw" placeholder="elegi tu contraseña" minlength="5"required>
+                        </p>
+                        <p>
                             <!-- Confirmar contraseña -->
                             <h5>confirmar contraseña</h5>
-                            <input type="password"name="confirmarPw" placeholder="confirmar tu contraseña" minlength="5"required>
-                        </div>
-                        <div>                
+                            <input type="password" name="confirmarPw" placeholder="confirmar tu contraseña" minlength="5"required>
+                        </p>
+                        <p>                
                             <!-- Botón de enviar que nos lleve a la página principal -->
                             <!-- Botón de borrar todos los datos del formulario -->
                             <input type="submit" name="enviar" value="Enviar">
                             <input type="reset" name="borrar" value="Borrar">
-                        </div>
+                        </p>
                 
                         
                 </form>
