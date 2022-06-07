@@ -252,6 +252,14 @@ article div.main-article{
     margin-left: 20px;
     justify-content: center;
     margin-right: 20px;
+    margin: auto;
+    width: 50%;
+    min-width: 250px;
+    max-width: 600px;
+    background: #CDCDCD;
+    padding: 10px;
+    border-radius: 5px;
+
    
 }
 .register p{
@@ -271,13 +279,25 @@ article div.main-article{
     width: auto;
 }
 
-/* LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN  */
+/*     Gris oscuro: #666;
+Gris claro: #ebebeb;
+LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN  */
+
+main {
+    margin-top: 20px;   
+}
 .login{
-    margin-top: 3%;    
+    margin-top: 20px;    
     margin-bottom: 3%;
-    width: 100%;
-    
- 
+    margin: auto;
+    width: 50%;
+    min-width: 250px;
+    max-width: 600px;
+    background: #CDCDCD;
+    padding: 10px;
+    border-radius: 5px;
+
+     
 }
 .loginPW, .loginUser{
     margin-top: 1%;    
